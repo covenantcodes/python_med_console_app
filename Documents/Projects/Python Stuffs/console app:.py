@@ -24,6 +24,11 @@ def add_patient():
     patients.append(Patient(name, age))
     print("Patient added successfully!")
 
+def print_patient_names():
+    print("Patient Names:")
+    for patient in patients:
+        print(patient.name)
+
 def add_physician():
     name = input("Enter physician name: ")
     specialization = input("Enter physician specialization: ")
@@ -61,7 +66,8 @@ def main():
         print("4. Print patient list")
         print("5. Print physician list")
         print("6. Print prescription list")
-        print("7. Exit")
+        print("7. Print patient names")  # New option
+        print("8. Exit")  # Update option number
 
         choice = input("Enter your choice: ")
 
@@ -78,6 +84,8 @@ def main():
         elif choice == '6':
             print_prescription_list()
         elif choice == '7':
+            print_patient_names()  # Call the new function
+        elif choice == '8':
             print("Exiting the application.")
             break
         else:
