@@ -124,6 +124,22 @@ def print_patient_names():
 
 
 def main():
+    """
+    The main function is the entry point of the program. It displays a menu of options to the user and performs different actions based on the user's choice.
+
+    Options:
+    1. Add new patient
+    2. Add physician
+    3. Add prescription
+    4. Print patient list
+    5. Print physician list
+    6. Print prescription list
+    7. Print patient names
+    8. Exit
+
+    The function continues to display the menu until the user chooses to exit the program.
+    """
+
     while True:
         print("\nMenu:")
         print("1. Add new patient")
