@@ -1,15 +1,80 @@
+# Here is a python class named 'Patient':
+
 class Patient:
+    """
+    This class represents a patient with a name and age.
+    """
+
     def __init__(self, name, age):
+        """
+        Initializes a new instance of the Patient class with the given name and age.
+
+        Args:
+            name (str): The name of the patient.
+            age (int): The age of the patient.
+        """
         self.name = name
         self.age = age
 
+# Here is a python class named 'Physician':
+
 class Physician:
+    """
+    Represents a physician with a name and specialization.
+    """
+
     def __init__(self, name, specialization):
+        """
+        Initializes a new instance of the Physician class with the given name and specialization.
+
+        Args:
+            name (str): The name of the physician.
+            specialization (str): The specialization of the physician.
+        """
         self.name = name
         self.specialization = specialization
 
+    def add_physician(self):
+        """
+        Allows the user to input the name and specialization of a physician and adds it to a list of physicians.
+        """
+        # Code to add a physician to the list
+
+    def print_physician_list(self):
+        """
+        Prints the list of physicians with their names and specializations.
+        """
+        # Code to print the list of physicians
+
+    def print_prescription_list(self):
+        """
+        Prints the list of prescriptions with the patient name, physician name, and medication.
+        """
+        # Code to print the list of prescriptions
+        self.name = name
+        self.specialization = specialization
+
+# Here is a python class named 'Prescription':
+
 class Prescription:
+    """
+    Represents a prescription for a patient.
+
+    Attributes:
+        patient_name (str): The name of the patient for whom the prescription is written.
+        physician_name (str): The name of the physician who prescribed the medication.
+        medication (str): The name of the medication prescribed.
+    """
+
     def __init__(self, patient_name, physician_name, medication):
+        """
+        Initializes a new Prescription object with the given patient name, physician name, and medication.
+
+        Args:
+            patient_name (str): The name of the patient.
+            physician_name (str): The name of the physician.
+            medication (str): The name of the medication.
+        """
         self.patient_name = patient_name
         self.physician_name = physician_name
         self.medication = medication
