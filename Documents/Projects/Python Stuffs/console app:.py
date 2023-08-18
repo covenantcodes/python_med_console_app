@@ -24,11 +24,6 @@ def add_patient():
     patients.append(Patient(name, age))
     print("Patient added successfully!")
 
-def print_patient_names():
-    print("Patient Names:")
-    for patient in patients:
-        print(patient.name)
-
 def add_physician():
     name = input("Enter physician name: ")
     specialization = input("Enter physician specialization: ")
@@ -57,6 +52,12 @@ def print_prescription_list():
     for prescription in prescriptions:
         print(f"Patient: {prescription.patient_name}, Physician: {prescription.physician_name}, Medication: {prescription.medication}")
 
+def print_patient_names():
+    print("Patient Names:")
+    for patient in patients:
+        print(patient.name)
+
+
 def main():
     while True:
         print("\nMenu:")
@@ -66,8 +67,8 @@ def main():
         print("4. Print patient list")
         print("5. Print physician list")
         print("6. Print prescription list")
-        print("7. Print patient names")  # New option
-        print("8. Exit")  # Update option number
+        print("7. Print patient names")
+        print("8. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -84,9 +85,9 @@ def main():
         elif choice == '6':
             print_prescription_list()
         elif choice == '7':
-            print_patient_names()  # Call the new function
+            print_patient_names()
         elif choice == '8':
-            print("Exiting the application.")
+            print("We'll miss you, Exiting the application.")
             break
         else:
             print("Invalid choice. Please select a valid option.")
